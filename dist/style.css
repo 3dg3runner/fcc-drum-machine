@@ -1,0 +1,86 @@
+html {
+  background-color: grey;
+  font-family: "Lexend", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#drum-machine-container {
+  border: #FFA500 solid 10px;
+  box-shadow: 10px 10px 10px black;
+  background-color: #B3B3B3;
+  height: 300px;
+  width: 500px;
+  margin: 15% auto;
+  display: flex;
+}
+
+#drum-machine {
+  width: 100%;
+  height: 100%;
+  margin: 0.5rem;
+  display: flex;
+  flex-flow: row;
+}
+
+.drum-pad {
+  background-color: grey;
+  padding: 1rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  margin: 0.2rem;
+  box-shadow: 4px 4px 5px black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 90%;
+  padding: 0.5rem;
+}
+
+.drum-pad:hover {
+  background-color: #5b5b5b;
+}
+
+.drum-pad:active {
+  background-color: yellow;
+}
+
+#display-container {
+  color: white;
+  font-size: 0.9rem;
+  width: 40%;
+  height: 90%;
+  margin: 0.5rem;
+}
+
+#display {
+  background-color: black;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  top: 39%;
+  position: relative;
+  align-items: center;
+}
+
+#display > h1 {
+  display: flex;
+  margin: auto;
+  font-family: Consolas;
+}
